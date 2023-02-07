@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 40vh;
+}
+header h1 {
+  font-family: HelveticaNeueLTProLt;
+  font-size: 44px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 325px;
+  color: #1d1e1f;
+}
+header h3 {
+  text-align: center;
+  font-family: Merriweather-LightItalic;
+  font-size: 16px;
+  font-weight: 300;
+  color: #898888;
+}
+header .button {
+  text-decoration: none;
+  font-family: Montserrat-Regular;
+  font-size: 13px;
+  font-weight: 40;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 188px;
+  height: 57px;
+  margin-top: 44px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+header .button:hover {
+  border: 1px solid;
+  color: white;
+  background-color: black;
+}
+header nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+  grid-template-columns: repeat(7, 1fr);
+  list-style-type: none;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav ul a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #989696;
+}
+header nav ul a:hover {
+  color: #010101;
+}
+header nav ul li.active a {
+  color: #010101;
+}
+
+main .about {
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30vw 105px 30vw;
+  grid-template-columns: repeat(2, 30vw);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-rows: 276px 105px 276px;
+  grid-template-rows: 276px 276px;
+  gap: 105px;
+  padding-top: 15vh;
+  padding-bottom: 20vh;
+  background: url("../img/white.png") center bottom repeat-x, url("../img/black.png") center bottom repeat-x, #1d1d1d;
+}
+
+main .about > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+main .about > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+main .about > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+main .about > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+main .about .about__item {
+  background-color: #181818;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0 1vw;
+  -webkit-transition: all ease 0.35s;
+  transition: all ease 0.35s;
+}
+main .about .about__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+main .about .about__item .about__year {
+  font-family: HelveticaNeueLTProRoman;
+  font-size: 48px;
+  font-weight: 400;
+  color: #fefefe;
+}
+main .about .about__item .about__text {
+  font-family: Montserrat-Light;
+  font-size: 15px;
+  font-weight: 300;
+  color: #b7b7b7;
+}
+main .team {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+main .team h1 {
+  font-family: HelveticaNeueLTProLt;
+  font-size: 34px;
+  font-weight: 400;
+  margin-top: 150px;
+  text-align: center;
+  color: #1d1e1f;
+}
+main .team h3 {
+  font-family: Merriweather-LightItalic;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #898888;
+}
+main .team .people {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20vw 10px 20vw 10px 20vw;
+  grid-template-columns: repeat(3, 20vw);
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+main .team .people .people__item img {
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .team .people .people__item .people__social {
+  margin-top: 15px;
+}
+main .team .people .people__item .people__social i {
+  font-size: 21px;
+  color: #e4e4e4;
+}
+main .team .people .people__item .people__name {
+  margin-top: 20px;
+  font-family: HelveticaNeueLTProMd;
+  font-size: 24px;
+  font-weight: 400;
+  color: #464646;
+}
+main .team .people .people__item .people__jobs {
+  font-family: HelveticaNeueLTProLt;
+  font-size: 13px;
+  font-weight: 400;
+  color: #b3b3b3;
+}
+main .provide {
+  background-color: #181818;
+  padding-top: 20vh;
+}
+main .provide h1 {
+  font-family: HelveticaNeueLTProLt;
+  font-size: 34px;
+  font-weight: 400;
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+}
+main .provide h3 {
+  font-family: Merriweather-LightItalic;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #777777;
+  margin-bottom: 140px;
+}
+main .provide .every {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20vw 10px 20vw 10px 20vw;
+  grid-template-columns: repeat(3, 20vw);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10vh;
+  padding-bottom: 25vh;
+  gap: 10px;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+main .provide .every .provide__item i {
+  border: 5px solid white;
+  padding: 40px;
+  color: white;
+  font-size: 50px;
+  border-radius: 100%;
+}
+main .provide .every .provide__item .provide__title {
+  margin-top: 100px;
+  font-family: HelveticaNeueLTProLt;
+  font-size: 26px;
+  font-weight: 400;
+  color: #ffffff;
+}
+main .provide .every .provide__item .provide__text {
+  font-family: HelveticaNeueLTProLt;
+  font-size: 18px;
+  margin-top: 30px;
+  font-weight: 400;
+  color: #383838;
+}
+main .contact {
+  margin-top: 150px;
+}
+main .contact h1 {
+  font-family: HelveticaNeueLTProLt;
+  font-size: 34px;
+  font-weight: 400;
+  text-align: center;
+  color: #1d1e1f;
+}
+main .contact h3 {
+  font-family: Merriweather-LightItalic;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #898888;
+  margin-bottom: 140px;
+}
+main .contact .contactus {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20vw 10px 20vw 10px 20vw;
+  grid-template-columns: repeat(3, 20vw);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 25vh;
+  gap: 10px;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+main .contact .contactus i {
+  font-size: 40px;
+  color: #323232;
+}
+main .contact .contactus .contact__text {
+  font-family: HelveticaNeueLTProLt;
+  font-size: 12px;
+  font-weight: 400;
+  color: #898888;
+}
+main .contact .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .contact .form form input {
+  width: 770px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+main .contact .form form textarea {
+  width: 770px;
+  resize: none;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+main .contact .form form ::-webkit-input-placeholder {
+  font-family: HelveticaNeueLTProLt;
+  font-size: 15px;
+  font-weight: 400;
+  color: #898888;
+}
+main .contact .form form ::-moz-placeholder {
+  font-family: HelveticaNeueLTProLt;
+  font-size: 15px;
+  font-weight: 400;
+  color: #898888;
+}
+main .contact .form form :-ms-input-placeholder {
+  font-family: HelveticaNeueLTProLt;
+  font-size: 15px;
+  font-weight: 400;
+  color: #898888;
+}
+main .contact .form form ::-ms-input-placeholder {
+  font-family: HelveticaNeueLTProLt;
+  font-size: 15px;
+  font-weight: 400;
+  color: #898888;
+}
+main .contact .form form ::placeholder {
+  font-family: HelveticaNeueLTProLt;
+  font-size: 15px;
+  font-weight: 400;
+  color: #898888;
+}
+main .contact .form form .btn {
+  background-color: #161616;
+  font-family: HelveticaNeueLTProMd;
+  font-size: 17px;
+  font-weight: 400;
+  color: #fefefe;
+}
+
+footer {
+  margin-top: 150px;
+  margin-bottom: 25px;
+  font-family: HelveticaNeueLTProLt;
+  font-size: 14px;
+  font-weight: 400;
+  color: #3b3b3b;
+  text-align: center;
+}
